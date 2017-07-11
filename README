@@ -1,0 +1,43 @@
+Running the Random Kitchen Sinks based regression:
+Installation Pre-requisites:
+(1) Python - the code was written in python 2.7
+(2) The sklearn package
+
+Setting the path for the data file:
+The line os.chdir() needs to reference the data directory where you have the data file jan_feb_pp_data.csv
+
+Running the code:
+In a python console, do the following:
+(1) import rks_sgd_regressor
+(2) from rks_sgd_regressor import *
+(3) do_RKS()
+
+
+
+Running the GP code for the proposed method:
+
+Installation Pre-requisites:
+(1) Python - the code was written in python 2.7
+(2) The GPy package
+(3) The pandas package
+(4) The numpy pakcage
+
+Setting the path for the data file:
+The line os.chdir() needs to reference the data directory where you have the data file jan_feb_pp_data.csv
+
+Running the code:
+In a python console, do the following:
+(1) import SS_Delay_Airline
+(2) from SS_Delay_Airline import *
+(3) rmse, err = sampling_gp()
+(3) Type rmse and hit enter to get the value of rmse associated with the method.
+
+Running laGP based regression:
+(1) Install the laGP package
+(2) Edit the setwd() to reference the data directory where you have the data file jan_feb_pp_data.csv
+(3) Run the script laGPExperiment.R
+
+Note: We were unable to use the entire test file with laGP package. For this reason, we had to do the prediction in batches of size 150000. The code took about 50 minutes to execute on our laptop.
+
+
+
