@@ -5,7 +5,7 @@ The second method is the locally approximate GP. This fits a local GP model for 
 
 The third method is the method proposed in "Fast Gaussian Process Regression for Big Data". The instructions to run the three programs are provided below.
 
-NOTE: You will need to edit the files below to set the location of the data file, jan_feb_pp_data.csv. 
+NOTE: You will need to edit the python and R files to set the location of the data file, jan_feb_pp_data.csv. 
 
 Running the Random Kitchen Sinks based regression:
 Installation Pre-requisites:
