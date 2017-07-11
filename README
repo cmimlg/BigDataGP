@@ -1,9 +1,10 @@
 This repository contains the code to illustrate big data regression using gaussian processes based on bagging.
-There are three methods illustrated here. Random Kitchen Sinks requires a stationary kernel. We also need to
-specify the the kernel hyper-parameter. The airline delay dataset needs a non-stationary covariance. Of course it is
-certainly possible to make the data stationary by removing trends or using a suitable mean function. However this
-requires additional pre-processing and exploratory analysis to find a suitable de-trending filter. If we use a stationary
-covariance for a problem that requires a non-stationary kernel, the results are poor.
+There are three methods illustrated here. The first of these is Random Kitchen Sinks. Random Kitchen Sinks requires a
+stationary kernel. We also need to specify the the kernel hyper-parameter. The airline delay dataset needs a non-stationary covariance. Of course it is certainly possible to make the data stationary by removing trends or using a suitable mean function. However this requires additional pre-processing and exploratory analysis to find a suitable de-trending filter. If we use a stationary covariance for a problem that requires a non-stationary kernel, the results are poor.
+
+The second method is the locally approximate GP. This fits a local GP model for a test point. It requires the specification of a neighborhood. Using a large neighborhood is impractical for large test sets. We tried the laGP implementation with the defaults suggested in the vignette. The size of the test set for the airline delay dataset is large. Therefore we had to score the test set in batches of 10000. The running time to score the test set was about 50 minutes on a laptop with 16 GB of RAM. 
+
+The third method is the method proposed in "Fast Gaussian Process Regression for Big Data". The instructions to run the three programs are provided below.
 
 
 
