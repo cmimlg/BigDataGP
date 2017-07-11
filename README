@@ -1,3 +1,12 @@
+This repository contains the code to illustrate big data regression using gaussian processes based on bagging.
+There are three methods illustrated here. Random Kitchen Sinks requires a stationary kernel. We also need to
+specify the the kernel hyper-parameter. The airline delay dataset needs a non-stationary covariance. Of course it is
+certainly possible to make the data stationary by removing trends or using a suitable mean function. However this
+requires additional pre-processing and exploratory analysis to find a suitable de-trending filter. If we use a stationary
+covariance for a problem that requires a non-stationary kernel, the results are poor.
+
+
+
 Running the Random Kitchen Sinks based regression:
 Installation Pre-requisites:
 (1) Python - the code was written in python 2.7
